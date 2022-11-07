@@ -65,7 +65,7 @@ select {
 
 /* index and library page backgrounds */
 .index-bg {
-  background-image: url("/images/index.jpg");
+  background-image: url("/BookWebApp/images/index.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
