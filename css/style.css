@@ -1,0 +1,219 @@
+/* Importing the lato font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* variable to hold the primary colors for all components */
+/* we can call this up using background-color: var() */
+:root {
+  --primary-color: #1d2329;
+  --secondary-color: #19384b;
+  --button-color: #9851d3;
+  --table-row-color: #b3aeae;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* setting body, anchor, unordered list, headings and paragraph elements */
+#app {
+  font-family: "lato", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.totals {
+  border-top: 2px solid;
+  border-color: var(--secondary-color);
+  padding-top: 5px;
+}
+
+.card .totals {
+  font-size: 18px;
+
+}
+
+/* style for the input boxes and button on library and contact elements */
+input[type=text],
+input[type=email],
+textarea,
+select {
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid;
+  border-color: var(--button-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: var(--table-row-color);
+  resize: none;
+}
+
+/* index and library page backgrounds */
+.index-bg {
+  background-image: url("/VueBookApp/images/index.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  height: 100%;
+}
+
+/* Formatting for tables */
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+  height: 20px;
+  table-layout: fixed;
+  overflow: scroll;
+}
+
+.styled-table thead tr {
+  height: 20px;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* .styled-table th, */
+.styled-table td {
+  padding: 12px 15px;
+  word-wrap: break-word;
+}
+
+.styled-table tbody tr {
+  border-bottom: 2px solid;
+  border-color: var(--table-row-color);
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid;
+  border-color: var(--table-row-color);
+}
+
+
+/* Navbar styling */
+.navbar {
+  background-color: var(--primary-color);
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: white;
+  height: 100px;
+  opacity: 95%;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.38);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  flex-direction: row;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+
+.navbar a.router-link-exact-active {
+  background-color: var(--button-color);
+
+}
+
+.totals {
+  font-size: 25px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.widget {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+  max-height: auto;
+}
+
+/* adding responsive media queries */
+/* tablets and under 800px */
+@media (max-width: 800px) {
+
+  input[type=text],
+  input[type=email],
+  textarea,
+  select {
+    width: 80%;
+  }
+
+  .container {
+    max-height: 600px;
+  }
+
+  .widget .card {
+    max-height: 800px;
+  }
+
+  .navbar {
+    padding-top: 5px;
+    height: 125px;
+  }
+}
+
+/* mobile devices */
+/* 500px and under */
+@media (max-width: 500px) {
+
+  input[type=text],
+  input[type=email],
+  textarea,
+  select {
+    width: 80%;
+  }
+
+  .container {
+    max-height: 600px;
+  }
+
+  .navbar {
+    padding-top: 5px;
+    height: 150px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 1100px) {
+  .navbar ul {
+    padding-right: 100px;
+  }
+}

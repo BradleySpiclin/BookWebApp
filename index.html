@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="index-bg">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Book-Bag Web App</title>
+	<script src="https://unpkg.com/vue@3"></script>
+	<script src="https://unpkg.com/vue-router@4"></script>
+       <!-- reference to external CSS -->
+    <link rel="stylesheet" type="text/css" href="/VueBookApp/css/utilities.css"> 
+    <link rel="stylesheet" type="text/css" href="/VueBookApp/css/style.css">  
+</head>
+<body>
+
+<!-- Vue App is mounted here  -->
+<section id="app">
+        <navbar></navbar>
+	<div class="text-center">
+		<router-view></router-view>
+	</div>
+</section>
+
+<!-- vue router pages -->
+<script src="pages/home.js"></script>
+<script src="pages/library.js"></script>
+<script src="pages/contact.js"></script>
+
+<!-- vue app JS  -->
+<script type="module" src="/VueBookApp/app.js"></script>
+
+</body>
+</html>
