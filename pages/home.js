@@ -70,7 +70,7 @@ var WeatherComponent = {
         return {
             weather: {},
             // API key can be fouind for free account by visitng https://openweathermap.org/
-            api_key: ${{ secrets.API_KEY }}
+            api_key: super_secret,
             url: "https://api.openweathermap.org/data/2.5/",
             fetched: false,
             lat: 0,
