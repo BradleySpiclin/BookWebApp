@@ -1,0 +1,3 @@
+on: push
+env:
+  super_secret: ${{ secrets.SuperSecret }}
