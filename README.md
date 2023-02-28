@@ -1,4 +1,3 @@
-# BookWebApp
 Vue.js Web Application
 ---
 
