@@ -2,7 +2,7 @@
 Vue.js Web Application
 ---
 
-This web application was my first introduction to using JavaScript and the Vue.js framework.
+This web application was my first introduction to using JavaScript and the Vue.js framework (Vue3).
 I have implemented some Vue features including Vue router, local and global components, templates, v-model directive and computed properties.
 
 ---
